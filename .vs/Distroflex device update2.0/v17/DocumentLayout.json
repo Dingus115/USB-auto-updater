@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\deviceupdater.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\deviceupdater.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\deviceupdater.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\deviceupdater.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\userassignment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\userassignment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\devicefileeditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\devicefileeditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\userassignment.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\userassignment.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dingu\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\oseditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\oseditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\stylefolder\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\stylefolder\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|c:\\users\\dingu\\documents\\asp\\resume site\\distroflex-device-update2.0\\distroflex device update2.0\\views\\oseditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A504AC-14BF-43C0-9998-7B66F254FFB2}|Distroflex device update2.0\\Distroflex device update2.0.csproj|solutionrelative:distroflex device update2.0\\views\\oseditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 224,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "deviceUpdater.xaml",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\deviceUpdater.xaml",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\deviceUpdater.xaml",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\deviceUpdater.xaml",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\deviceUpdater.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T02:27:57.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "deviceUpdater.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\deviceUpdater.xaml.cs",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\deviceUpdater.xaml.cs",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\deviceUpdater.xaml.cs",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\deviceUpdater.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAALgAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T02:28:19.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "userAssignment.xaml",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\userAssignment.xaml",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\userAssignment.xaml",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\userAssignment.xaml",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\userAssignment.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T03:25:32.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\MainWindow.xaml",
+              "RelativeToolTip": "Distroflex device update2.0\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T01:13:28.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "deviceFileEditor.xaml",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\deviceFileEditor.xaml",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\deviceFileEditor.xaml",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\deviceFileEditor.xaml",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\deviceFileEditor.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-23T00:46:37.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemCollection.cs",
+              "DocumentMoniker": "C:\\Users\\dingu\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs",
+              "ToolTip": "C:\\Users\\dingu\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs",
+              "ViewState": "AgIAAFcFAAAAAAAAAAAowHAFAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T00:44:53.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "userAssignment.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\userAssignment.xaml.cs",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\userAssignment.xaml.cs",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\userAssignment.xaml.cs",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\userAssignment.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T00:28:23.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Distroflex device update2.0\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAxwDYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T01:14:53.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "osEditor.xaml",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\osEditor.xaml",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\osEditor.xaml",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\osEditor.xaml",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\osEditor.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-27T01:03:27.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dictionary1.xaml",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\styleFolder\\Dictionary1.xaml",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\styleFolder\\Dictionary1.xaml",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\styleFolder\\Dictionary1.xaml",
+              "RelativeToolTip": "Distroflex device update2.0\\styleFolder\\Dictionary1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-27T00:57:41.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "osEditor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\osEditor.xaml.cs",
+              "RelativeDocumentMoniker": "Distroflex device update2.0\\views\\osEditor.xaml.cs",
+              "ToolTip": "C:\\Users\\dingu\\Documents\\asp\\resume site\\Distroflex-device-update2.0\\Distroflex device update2.0\\views\\osEditor.xaml.cs",
+              "RelativeToolTip": "Distroflex device update2.0\\views\\osEditor.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T00:25:33.247Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

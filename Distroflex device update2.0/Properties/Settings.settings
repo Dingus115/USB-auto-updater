@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Distroflex_device_update2._0.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="sqlCommandString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server=DISTRSERVER; database=deviceid; userid=justin; password=1234</Value>
+    </Setting>
+    <Setting Name="sqlServerConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=DISTRSERVER;Database=db testing;User Id=SA;Password=1241273Sql@;TrustServerCertificate=True;
+</Value>
+    </Setting>
+    <Setting Name="User" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="staySignedIn" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="userIsAdmin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

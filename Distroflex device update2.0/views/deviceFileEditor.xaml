@@ -1,0 +1,323 @@
+﻿<UserControl x:Class="Distroflex_device_update2._0.views.deviceFileEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Distroflex_device_update2._0.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1300">
+    <Grid Background="#3b3c36" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition MinWidth="650"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Label Style="{StaticResource labelBold}" Content="Device File Editor"/>
+        <Label Style="{StaticResource labelBold}" Content="Server status:" Grid.Column="1" HorizontalAlignment="Right"/>
+        <Label Style="{StaticResource labelBold}" Content="null" Name="serverStatus" Grid.Column="2" HorizontalAlignment="Left"/>
+        <DataGrid Name="existingFiles"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="2"
+                   Grid.RowSpan="12"
+                   Background="AntiqueWhite"
+                   BorderBrush="Black"
+                   BorderThickness="10"
+                   Margin="0 0 100 0"
+                   IsReadOnly="True"
+                   SelectionChanged="existingFiles_SelectionChanged">
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#0078d7"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="File" 
+                                    Width="*" 
+                                    Binding="{Binding filePath}"/>
+                <DataGridTextColumn Header="Partition" 
+                                    MaxWidth="54"
+                                    MinWidth="54"
+                                    Binding="{Binding partition}"
+                                    />
+                <DataGridCheckBoxColumn Header="Restart"
+                                        MaxWidth="50"
+                                        MinWidth="50"
+                                        Binding="{Binding restartAfter}"/>
+                <DataGridCheckBoxColumn Header="isConfig"
+                                        MaxWidth="52"
+                                        MinWidth="52"
+                                        Binding="{Binding configFile}"/>
+                <DataGridTextColumn Header="File Order" 
+                    MaxWidth="65"
+                    MinWidth="65"
+                    Binding="{Binding orderOfFiles}"
+                    />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Name="moveUp"
+                Content="Up"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Margin="5 5 35 5"
+                MinWidth="60" Click="moveUp_Click"/>
+        <Button Name="modeDown"
+                Content="Down"
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Margin="5 5 35 5"
+                MinWidth="60" Click="modeDown_Click"/>
+        <Button Name="deleteRecord"
+                Content="Delete"
+                Grid.Row="5"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                Margin="555,5,0,5"
+                MinWidth="60" Click="deleteRecord_Click"/>
+        <Button Name="deleteAll"
+                Content="Delete all"
+                Grid.Row="6"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Margin="5 5 35 5"
+                MinWidth="60" Click="deleteAll_Click"/>
+
+        <Button Name="editScript"
+                Content="Edit MCF"
+                Grid.Row="8"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Margin="5 5 35 5"
+                MinWidth="60" Click="editScript_Click"/>
+
+
+        <!--COMBOBOXES FOR FILTERING-->
+        <Label Content="Please select Device" 
+           Style="{StaticResource labelBold}"
+           Grid.Row="1"
+           Grid.Column="2"
+           HorizontalContentAlignment="Center"/>
+        <ComboBox Margin="5"
+              Name="deviceComboBox"
+              Grid.Row="2"
+              Grid.Column="2" 
+              SelectionChanged="deviceComboBox_SelectionChanged"/>
+
+        <Label Content="Please select OS" 
+               Style="{StaticResource labelBold}"
+               Grid.Row="1"
+               Grid.Column="3"
+               HorizontalContentAlignment="Center"/>
+        <ComboBox Margin="5"
+                  Name="osCombobox"
+                  Grid.Row="2"
+                  Grid.Column="3" SelectionChanged="osCombobox_SelectionChanged"/>
+
+        <Label Content="Please select Engine" 
+               Style="{StaticResource labelBold}"
+               Grid.Row="1"
+               Grid.Column="4"
+               HorizontalContentAlignment="Center"
+               VerticalAlignment="Bottom"/>
+        <ComboBox Margin="5"
+                  Name="engineCombobox"
+                  Grid.Row="2"
+                  Grid.Column="4" SelectionChanged="engineCombobox_SelectionChanged"/>
+
+        <Button Margin="5"
+            Grid.Row="2"
+            Grid.Column="5"
+            Content="Refresh devices" Click="refreshDeviceList"/>
+
+
+        <!--BOXES TO ADD FILES TO CELLS-->
+        <TextBox Margin="5"
+                 Grid.Column="2"
+                 Grid.Row="4"
+                 Grid.ColumnSpan="3"
+                 Text="null"
+                 IsReadOnly="True"
+                 Name="fileSelected_textbox"/>
+        <Button Margin="5"
+                Content="..."
+                Grid.Column="4"
+                Grid.Row="4"
+                MaxWidth="30"
+                MinWidth="30"
+                Name="fileSelectbutton"
+                HorizontalAlignment="Right" Click="fileSelectbutton_Click"/>
+
+        <Button Content="Save and Commit"
+                Margin="5"
+                Grid.Column="5"
+                Grid.Row="5"
+                VerticalAlignment="Bottom" Click="commitAllChanges_Click"/>
+
+        <Button Name="addFile"
+                Content="Add File"
+                Margin="5"
+                Grid.Column="5"
+                Grid.Row="4"
+                Width="auto" Click="addFile_Click"/>
+
+        <Label Grid.Row="5"
+               Grid.Column="2"
+               Content="Current File"
+               Style="{StaticResource labelBold}"
+               HorizontalAlignment="Left"/>
+
+        <TextBox Grid.Row="5"
+                 Grid.Column="3"
+                 Margin="5"
+                 Grid.ColumnSpan="2"
+                 Name="currentFileName"
+                 IsReadOnly="True"/>
+
+        <Label Content="Does device need scritps?"
+               Style="{StaticResource labelBold}"
+               Grid.Column="2"
+               Grid.Row="6"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+        <CheckBox Name="scripts"
+                  Grid.Row="6"
+                  Grid.Column="2"
+                  Grid.ColumnSpan="2"
+                  Margin="150 5 5 5"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Center" Checked="scripts_Checked" Unchecked="scripts_Unchecked">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+
+        <Grid Name="advancedOptions"
+              Grid.Row="7"
+              Grid.Column="2"
+              Grid.RowSpan="5"
+              Grid.ColumnSpan="4"
+              Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Patition #:"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Style="{StaticResource labelBold}"/>
+            <TextBox x:Name="partitionNumber_Textbox" Grid.Row="0"
+                     Grid.Column="0"
+                     HorizontalAlignment="Left"
+                     MinWidth="30"
+                     Margin="65 5 5 5"/>
+
+            <Label Content="Restart after?"
+                   Style="{StaticResource labelBold}"
+                   Grid.Column="0"
+                   Grid.Row="1"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"/>
+            <CheckBox Name="restart"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      Margin="85 5 5 5"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center"
+                      IsChecked="{Binding restartCheck}">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+
+            <Label Content="Config?"
+                   Style="{StaticResource labelBold}"
+                   Grid.Column="0"
+                   Grid.Row="2"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"/>
+            <CheckBox Name="config"
+                      Grid.Row="2"
+                      Grid.Column="0"
+                      Margin="50 5 5 5"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center"
+                      IsChecked="{Binding isChceked}">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+
+            <Label Content="Please select folder for scripts to be written to!"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Style="{StaticResource labelBold}"
+                   Grid.ColumnSpan="2"/>
+
+            <TextBox Margin="5"
+                     Grid.Column="0"
+                     Grid.Row="4"
+                     Grid.ColumnSpan="2"
+                     Text="null"
+                     IsReadOnly="True"
+                     Name="folderSelected_textbox"/>
+            <Button Margin="5"
+                    Content="..."
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    MaxWidth="30"
+                    MinWidth="30"
+                    Name="folderSelectbutton"
+                    HorizontalAlignment="Right" Click="folderSelectbutton_Click"/>
+        </Grid>
+
+
+
+        <!--<Button Name="deleteFile"
+        Content="Delete Selected File"
+        Margin="5"
+        Grid.Row="8"
+        Grid.Column="2"/>-->
+
+    </Grid>
+</UserControl>

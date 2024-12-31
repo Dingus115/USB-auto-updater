@@ -1,0 +1,73 @@
+﻿<Window x:Class="Distroflex_device_update_2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:views="clr-namespace:Distroflex_device_update2._0.views"
+        mc:Ignorable="d"
+        Title="Distroflex Device Updater" 
+        MinHeight="600" MinWidth="950"
+        Height="600" Width="950">
+    <Window.Resources>
+        <SolidColorBrush Color="#1e2019" x:Key="Backgroud"/>
+        <Border BorderThickness="2" x:Key="lighterBrush"/>
+    </Window.Resources>
+    
+    <Grid ShowGridLines="False"
+          Background="{DynamicResource Backgroud}">
+
+        <!--Main markup-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--Tab manager-->
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Updater"
+                    Margin="2 5 2 0"
+                    BorderThickness="0" 
+                    Click="updateDeviceTab"
+                    Name="updateDeviceTabButton"/>
+            <Button Content="Server Manager"
+                    Grid.Column="1"
+                    Margin="2 5 2 0"
+                    BorderThickness="0" 
+                    Click="serverManagerTab"
+                    Name="serverManagerTabTabButton"/>
+            <Button Content="SD Loader"
+                    Grid.Column="2"
+                    Margin="2 5 2 0"
+                    BorderThickness="0" 
+                    Click="sdLoaderTab"
+                    Name="sdLoaderTabButton"/>
+            <Button Content="Sign Out"
+                    Grid.Column="6"
+                    Margin="2 5 2 0"
+                    Click="SignOut"/>
+        </Grid>
+        <Grid Grid.Row="1" Name="deviceUpdateView" Visibility="Visible">
+            <views:deviceUpdater/>
+        </Grid>
+        <Grid Grid.Row="1" Name="serverManagerView" Visibility="Collapsed">
+            <views:serverManager/>
+        </Grid>
+        <Grid Grid.Row="1" Name="sdLoaderView" Visibility="Collapsed">
+            <views:sdLoader/>
+        </Grid>
+    </Grid>
+</Window>

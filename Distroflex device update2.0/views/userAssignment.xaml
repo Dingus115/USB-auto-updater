@@ -1,0 +1,160 @@
+﻿<UserControl x:Class="Distroflex_device_update2._0.views.userAssignment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Distroflex_device_update2._0.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#3b3c36" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Style="{StaticResource labelBold}" Content="User Assignment"/>
+        <Label Style="{StaticResource labelBold}" Content="Server status:" Grid.Column="1" HorizontalAlignment="Right"/>
+        <Label Style="{StaticResource labelBold}" Content="null" Name="serverStatus" Grid.Column="2" HorizontalAlignment="Left"/>
+        <DataGrid Name="existingUsers"
+                       Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       Grid.RowSpan="5"
+                       Background="AntiqueWhite"
+                       BorderBrush="Black"
+                       BorderThickness="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Current Users" Width="*" Binding="{Binding userName}"/>
+                <DataGridTextColumn Header="Admin Access" Width="*" Binding="{Binding adminAccess}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Name="usertoDevicegrid"
+               Grid.Row="7"
+               Grid.ColumnSpan="2"
+               Grid.RowSpan="6"
+               Background="AntiqueWhite"
+               BorderBrush="Black"
+               BorderThickness="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Devices assigned to User:" Width="*" Binding="{Binding}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBox Background="AntiqueWhite"
+                 Name="addUsertextbox"
+                 Grid.Row="1" 
+                 Grid.Column="3" 
+                 Margin="5,0,5,5"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center" Height="20" VerticalAlignment="Bottom"/>
+        <TextBox Background="AntiqueWhite"
+                 Name="removeUserTextbox"
+                 Grid.Row="2" 
+                 Grid.Column="3" 
+                 Margin="5"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
+        <TextBox Background="AntiqueWhite"
+                 Name="initialUsername"
+                 Grid.Row="4" 
+                 Grid.Column="3" 
+                 Margin="5"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
+        <TextBox Background="AntiqueWhite"
+                 Name="newUsername"
+                 Grid.Row="4" 
+                 Grid.Column="4" 
+                 Margin="5"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"/>
+        <Label Style="{StaticResource labelBold}" 
+               Content="Current User Name"
+               Grid.Column="3"
+               Grid.Row="3"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"/>
+        <Label Style="{StaticResource labelBold}" 
+               Content="New User Name"
+               Grid.Column="4"
+               Grid.Row="3"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"/>
+        <Button Grid.Column="2"
+                Grid.Row="1"
+                Margin="5"
+                Content="Add New User" Click="addUser"/>
+        <Button Grid.Column="2"
+                Grid.Row="4"
+                Margin="5"
+                Content="Edit Existing User name" Click="changeUserName"/>
+        <Button Grid.Column="2"
+                Grid.Row="2"
+                Margin="5"
+                Content="Remove User" Click="removeUser"/>
+        <Button Grid.Column="2"
+                Grid.Row="5"
+                Margin="5"
+                Content="Refresh grid" Click="refreshGrids"/>
+
+        <Label Content="Select User:"
+               Grid.Row="7"
+               Grid.Column="2"
+               HorizontalAlignment="Right"
+               Style="{StaticResource labelBold}"/>
+
+        <ComboBox Grid.Row="7"
+                  Grid.Column="3"
+                  Margin="5"
+                  Name="userCombobox" SelectionChanged="userCombobox_SelectionChanged"
+                  />
+
+        <Label Content="Select device:"
+               Grid.Row="8"
+               Grid.Column="2"
+               HorizontalAlignment="Right"
+               Style="{StaticResource labelBold}"/>
+
+        <ComboBox Grid.Row="8"
+                  Grid.Column="3"
+                  Margin="5"
+                  Name="deviceComboBox"/>
+
+        <Button Name="addDeviceToUser"
+                Margin="7,5,3,5"
+                Content="Add Device"
+                Grid.Row="9"
+                Grid.Column="3" Click="addDeviceToUser_Click"
+                Width="auto"/>
+        <Button Name="refreshDevices"
+                Margin="7,5,3,5"
+                Content="Refresh Devices"
+                Grid.Row="8"
+                Grid.Column="4"
+                Width="auto" Click="refreshDevices_Click"/>
+
+        <Button Name="removeDevicefromUser"
+                Margin="5"
+                Content="Remove Device"
+                Grid.Row="9"
+                Grid.Column="2" Click="removeDevicefromUser_Click"/>
+    </Grid>
+</UserControl>

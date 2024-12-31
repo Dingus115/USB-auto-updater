@@ -1,0 +1,69 @@
+﻿<Window x:Class="Distroflex_device_update2._0.serverEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Distroflex_device_update2._0" xmlns:views="clr-namespace:Distroflex_device_update2._0.views"
+        mc:Ignorable="d"
+        Title="serverEditor" Height="600" Width="1300">
+    <Grid Background="#3b3c36" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="OS Editor"
+                Margin="2 5 2 0"
+                BorderThickness="0"
+                Grid.Column="2" 
+                Click="osEditorWindow"
+                Name="osEditorButton"/>
+        <Button Content="Engines Editor"
+                Margin="2 5 2 0"
+                BorderThickness="0" 
+                Grid.Column="3" 
+                Click="engineEditorWindow"
+                Name="enginesEditorButton"/>
+        <Button Content="Device Editor"
+                Margin="2 5 2 0"
+                BorderThickness="0" 
+                Grid.Column="1" 
+                Click="deviceEditorWindow"
+                Name="deviceEditorButton"/>
+        <Button Content="Device Creator"
+                Margin="2 5 2 0"
+                BorderThickness="0" 
+                Grid.Column="0" 
+                Click="deviceCreatorWindow"
+                Name="deviceCreatorButton"/>
+        <Button Content="User Editor"
+                Margin="2 5 2 0"
+                BorderThickness="0"
+                Grid.Column="4" 
+                Click="userEditorWindow"
+                Name="userEditorButton"/>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="5" Name="osEditorView">
+            <views:osEditor/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="5" Name="engineEditorView">
+            <views:engineEditor/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="5" Name="userEditorView">
+            <views:userAssignment/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="5" Name="deviceCreatorView">
+            <views:deviceCreator/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="5" Name="deviceEditorView">
+            <views:deviceFileEditor/>
+        </Grid>
+    </Grid>
+</Window>

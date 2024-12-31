@@ -1,0 +1,83 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <Style x:Key="UpdateButton" TargetType="Button" >
+                <Setter Property="Foreground" Value="AntiqueWhite"/>
+                <Setter Property="Background" Value="#4caf50"/>
+                <Setter Property="Margin" Value="5 0 5 0"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="10" 
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="black"
+                                    BorderThickness="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                                </ContentPresenter>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6aad6d"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Background" Value="#909990"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="CancelButton" TargetType="Button" >
+                <Setter Property="Foreground" Value="AntiqueWhite"/>
+                <Setter Property="Background" Value="#b53131"/>
+                <Setter Property="Margin" Value="5 0 5 0"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="10" 
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="black"
+                                    BorderThickness="2">    
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                                </ContentPresenter>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#ba4949"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="GenericButton" TargetType="Button" >
+                <Setter Property="Foreground" Value="AntiqueWhite"/>
+                <Setter Property="Background" Value="#575853"/>
+                <Setter Property="Margin" Value="5 0 5 0"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="10" 
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="black"
+                                    BorderThickness="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                                </ContentPresenter>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#737470"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="labelBold" TargetType="Label">
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Foreground" Value="AntiqueWhite"/>
+            </Style>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

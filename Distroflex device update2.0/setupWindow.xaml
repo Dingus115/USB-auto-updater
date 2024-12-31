@@ -1,0 +1,99 @@
+﻿<Window x:Class="Distroflex_device_update2._0.setupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Distroflex_device_update2._0"
+        mc:Ignorable="d"
+        Title="setupWindow" Height="450" Width="800">
+    <Grid Background="#3b3c36" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Content="Motorola Device Updater"
+               Style="{StaticResource labelBold}"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               Margin="5 5 5 0"/>
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Content="Please enter company assigned key"
+               Style="{StaticResource labelBold}"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Right"
+               Margin="5 5 5 0"/>
+        <TextBox Grid.Row="1"
+                 Grid.Column="2"
+                 Margin="5"/>
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="5"
+                MaxWidth="75"
+                Content="Verify" Click="Button_Click"/>
+        <Grid Grid.Row="3"
+              Grid.Column="1"
+              Grid.ColumnSpan="2"
+              Grid.RowSpan="5"
+              Name="localSetupBox"
+              Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Content="Please enter server Address:"
+                   Style="{StaticResource labelBold}"
+                   HorizontalAlignment="Right"/>
+            <TextBox Grid.Row="0"
+                     Grid.Column="1"
+                     Margin="5"/>
+            <Label Grid.Row="1"
+                   Grid.Column="0"
+                   Content="Username:"
+                   Style="{StaticResource labelBold}"
+                   HorizontalAlignment="Right"/>
+            <TextBox Grid.Row="1"
+                     Grid.Column="1"
+                     Margin="5"/>
+            <Label Grid.Row="2"
+                   Grid.Column="0"
+                   Content="Password:"
+                   Style="{StaticResource labelBold}"
+                   HorizontalAlignment="Right"/>
+            <TextBox Grid.Row="2"
+                     Grid.Column="1"
+                     Margin="5"/>
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Margin="5"
+                    Grid.ColumnSpan="2"
+                    MaxWidth="75"
+                    Content="Save"/>
+
+        </Grid>
+    </Grid>
+</Window>

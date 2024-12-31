@@ -1,0 +1,72 @@
+﻿<Window x:Class="Distroflex_device_update2._0.companySignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Distroflex_device_update2._0"
+        mc:Ignorable="d"
+        Title="companySignInWindow" MaxHeight="300" MaxWidth="600"
+        MinHeight="210"
+        MinWidth="600">
+    <Grid Background="#3b3c36" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Comapny:"
+               Style="{StaticResource labelBold}"
+               Grid.Column="1"
+               HorizontalAlignment="Right"/>
+        <Label Content=""
+               Name="companyName"
+               Style="{StaticResource labelBold}"
+               Grid.Column="2"
+               HorizontalAlignment="Left"/>
+
+        <Label Content="Username:"
+           Grid.Row="2"
+           Grid.Column="1"
+           HorizontalAlignment="Right"
+           Style="{StaticResource labelBold}"/>
+        <TextBox Name="userNameTextbox"
+             Grid.Row="2"
+             Grid.Column="2"
+             Margin="5"/>
+        <Label Content="Password:"
+           Grid.Row="3"
+           Grid.Column="1"
+           HorizontalAlignment="Right"
+           Style="{StaticResource labelBold}"/>
+        <TextBox Name="passwordTextbox"
+             Grid.Row="3"
+             Grid.Column="2"
+             Margin="5"/>
+        <Label Content="Stay signed in?"
+               Grid.Row="4"
+               Grid.Column="1"
+               HorizontalAlignment="Right"
+               Style="{StaticResource labelBold}"/>
+        <CheckBox x:Name="keepSignInCheckBox" Grid.Row="4"
+                  Grid.Column="2"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Left"
+                  Margin="5"/>
+        <Button Content="Sign in"
+            Margin="75 5 75 5"
+            Grid.Row="5"
+            Grid.Column="1"
+            Grid.ColumnSpan="2" Click="Button_Click"/>
+    </Grid>
+</Window>
